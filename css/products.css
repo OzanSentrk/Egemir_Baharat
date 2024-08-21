@@ -3,8 +3,17 @@ body {
 	font-family: "Open Sans", sans-serif;
 }
 h2 {
-	color: #000;
+	color: #000000;
 	font-size: 26px;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	margin: 30px 0 60px;
+}
+.title{
+	color: #ffffff;
+	font-size: 60px;
 	font-weight: 300;
 	text-align: center;
 	text-transform: uppercase;
@@ -18,7 +27,7 @@ h2::after {
 	margin: 0 auto;
 	height: 4px;
 	border-radius: 1px;
-	background: #7ac400;
+	background: #000000;
 	left: 0;
 	right: 0;
 	bottom: -20px;
@@ -28,7 +37,7 @@ h2::after {
 	padding: 0 70px;
 }
 .carousel .item {
-	color: #747d89;
+	color: #000000;
 	min-height: 325px;
     text-align: center;
 	overflow: hidden;
@@ -48,8 +57,8 @@ h2::after {
 	position: relative;
 }
 .carousel .item img {	
-	max-width: 100%;
-	max-height: 100%;
+	max-width: 90%;
+	max-height: 90%;
 	display: inline-block;
 	position: absolute;
 	bottom: 0;
@@ -63,40 +72,14 @@ h2::after {
 .carousel .item h4, .carousel .item p, .carousel .item ul {
 	margin-bottom: 5px;
 }
-.carousel .thumb-content .btn {
-	color: #7ac400;
-    font-size: 11px;
-    text-transform: uppercase;
-    font-weight: bold;
-    background: none;
-    border: 1px solid #7ac400;
-    padding: 6px 14px;
-    margin-top: 5px;
-    line-height: 16px;
-    border-radius: 20px;
-}
-.carousel .thumb-content .btn:hover, .carousel .thumb-content .btn:focus {
-	color: #fff;
-	background: #7ac400;
-	box-shadow: none;
-}
+
+
 .carousel .thumb-content .btn i {
 	font-size: 14px;
     font-weight: bold;
     margin-left: 5px;
 }
-.carousel .carousel-control {
-	height: 44px;
-	width: 40px;
-	background: #7ac400;	
-    margin: auto 0;
-    border-radius: 4px;
-	opacity: 0.8;
-}
-.carousel .carousel-control:hover {
-	background: #78bf00;
-	opacity: 1;
-}
+
 .carousel .carousel-control i {
     font-size: 36px;
     position: absolute;
@@ -140,25 +123,7 @@ h2::after {
 .carousel-indicators li.active {	
 	background: rgba(0, 0, 0, 0.6);
 }
-.carousel .wish-icon {
-	position: absolute;
-	right: 10px;
-	top: 10px;
-	z-index: 99;
-	cursor: pointer;
-	font-size: 16px;
-	color: #abb0b8;
-}
-.carousel .wish-icon .fa-heart {
-	color: #ff6161;
-}
-.star-rating li {
-	padding: 0;
-}
-.star-rating i {
-	font-size: 14px;
-	color: #ffc000;
-}
+
 .thumb-wrapper {
 	display: flex;
 	flex-direction: column;
@@ -184,5 +149,5 @@ h2::after {
 	width: 5%;
 }
 .carousel-control-prev-icon, .carousel-control-next-icon {
-	background-color: rgba(233, 64, 13, 0.63);
+	background-color: rgba(9, 104, 33, 0.63);
 }
