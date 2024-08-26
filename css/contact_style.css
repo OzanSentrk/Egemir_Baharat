@@ -3,34 +3,30 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 html, body {
-  height: auto; /* Ekranın tamamını kaplamasını istemiyorsan bunu kullanabilirsin */
-  background: #666666;
   font-family: 'Balsamiq Sans', sans-serif;
 }
-
 body {
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
 }
-
 .card {
   width: 70%;
-  padding: 30px 90px 90px 90px;
-  border: 6px solid rgba(0, 0, 0, 0.3);
-  box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.3);
+  padding: 30px 90px 0px 90px;
+  border: 6px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.5);
   border-radius: 50px;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
 }
-
 .card h2 {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.7);
   font-size: 60px;
   text-transform: uppercase;
 }
-
 .card .row {
   position: relative;
   width: 100%;
@@ -46,15 +42,27 @@ body {
   margin: 30px 20px 40px 0;
   transition: 0.5s;
 }
-
 .card .row .form-group {
   position: relative;
   width: 100%;
   height: 40px;
-  color: #ffffff;
+  color: #000000;
 }
-
-.card .row .form-group input,
+.card .row .form-group input
+ {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  font-size: 24px;
+  padding: 10px 0 10px 20px;
+  border: 5px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
+  color: #000000;
+  border-radius: 50px;
+  
+}
 .card .row .form-group textarea {
   position: absolute;
   width: 90%;
@@ -65,29 +73,27 @@ body {
   padding: 10px 0 10px 20px;
   border: 5px solid rgba(0, 0, 0, 0.3);
   box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
-  color: #ffffff;
+  color: #000000;
   border-radius: 50px;
+  height: max-content;
 }
-
 .card .row .form-group label {
   line-height: 40px;
-  color: #ffffff;
+  color: #000000;
   font-size: 24px;
   margin: 0 0 0 30px;
   display: block;
   pointer-events: none;
 }
-
 .row .col:nth-child(6) {
   margin-top: 64px;
 }
-
 .card .row .form-group input:focus,
 .card .row .form-group textarea:focus {
   border: 5px solid #ffffff;
   transition: all 0.5s;
+  
 }
-
 .card .row input[type="submit"] {
   border: 5px solid rgba(0, 0, 0, 0.3);
   box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.3);
@@ -98,17 +104,18 @@ body {
   outline: none;
   background: transparent;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #000000;
   line-height: 40px;
   font-size: 24px;
   font-weight: 700;
   border-radius: 45px;
   transition: all 0.4s;
+  
 }
-
 .card .row input[type="submit"]:hover {
-  border: 5px solid rgba(255, 255, 255, 1);
-  color: #ffffff;
+  border:  3px solid rgba(0, 0, 0, 0.8);
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.8);
+  color: #000000;
   transition: all 0.4s;
 }
 

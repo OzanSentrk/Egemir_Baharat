@@ -22,7 +22,17 @@
     <link rel="stylesheet" type="text/css" href="vendor.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/contact_style.css">
-
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "eA4EPOAhIRoQ-dQGr",
+            });
+        })();
+    </script>
+    <script src ="js/mail.js"></script>
 
 </head>
 
@@ -159,7 +169,7 @@
                             <svg class="phone text-primary" width="24" height="24">
                                 <use xlink:href="#phone"></use>
                             </svg>
-                            <span>12345-67-8910</span>
+                            <span>+90(542) 232 8483</span>
                         </a>
                     </div>
                 </div>
@@ -175,15 +185,7 @@
                         <li>
                             <a href="https://www.facebook.com/profile.php?id=100078912785126&sk=about" target="_blank"><svg width="18" height="18" viewBox="0 0 24 24"><use xlink:href="#facebook"></use></svg></a>
                         </li>
-                        <li>
-                            <a href="#"><svg width="18" height="18" viewBox="0 0 24 24"><use xlink:href="#twitter"></use></svg></a>
-                        </li>
-                        <li>
-                            <a href="#"><svg width="18" height="18" viewBox="0 0 24 24"><use xlink:href="#youtube"></use></svg></a>
-                        </li>
-                        <li>
-                            <a href="#"><svg width="18" height="18" viewBox="0 0 24 24"><use xlink:href="#pinterest"></use></svg></a>
-                        </li>
+                       
                         <li>
                             <a href="https://www.instagram.com/egemirbaharat?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><svg width="18" height="18" viewBox="0 0 24 24"><use xlink:href="#instagram"></use></svg></a>
                         </li>
@@ -241,45 +243,40 @@
         </div>
     </section>
     <div class="card">
-        <h2>Contact Us</h2>
+        <h2>Bizimle İletişime Geçin</h2>
         <div class="row">
           <div class="col">
             <div class="form-group">
-              <label>First Name</label>
-              <input type="text">
+              <label>Ad Soyad </label>
+              <input type="text" id ="name" name="name" required>
             </div>
           </div>
       
           <div class="col">
             <div class="form-group">
-              <label>Surname</label>
-              <input type="text">
+              <label>Konu</label>
+              <input type="text" id ="subject" name="subject" required>
             </div>
           </div>
       
           <div class="col">
             <div class="form-group">
               <label>Email</label>
-              <input type="text">
+              <input type="text" id ="mail" name="mail" required>
+            </div>
+          </div>
+      
+         
+      
+          <div class="col">
+            <div class="form-group message">
+              <label>Mesaj</label>
+              <textarea id ="message" name="message"  rows = "4" required></textarea>
             </div>
           </div>
       
           <div class="col">
-            <div class="form-group">
-              <label>Phone</label>
-              <input type="text">
-            </div>
-          </div>
-      
-          <div class="col">
-            <div class="form-group">
-              <label>Message</label>
-              <textarea></textarea>
-            </div>
-          </div>
-      
-          <div class="col">
-            <input type="submit" value="Submit">
+            <input type="submit" onclick="sendMail()" value="Gönder">
           </div>
         </div>
       </div>
@@ -292,6 +289,7 @@
     <script type="text/javascript" src="js/plugins.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
