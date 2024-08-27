@@ -486,4 +486,34 @@ a {
   width: 25%;
   height: 35%;
 }
+@media (max-width: 1024px) {
+  .col-md-10.offset-md-5.egemir-map {
+      width: 100%; /* Mobilde tam genişlik */
+      margin-left: 0; /* Offset'i sıfırlıyoruz */
+  }
 
+  .egemir-map iframe {
+      width: 100%;
+      height: 400px;
+  }
+  .message-area{
+    bottom: 30px;
+    margin-top: 5px;
+  }
+  .name-area{
+    bottom: 30px;
+    margin-top: 5px;
+  }
+  .subject-area{
+    bottom: 30px;
+    margin-top: 5px;
+  }
+  .email-area{
+    bottom: 30px;
+    margin-top: 5px;
+  }
+ 
+  .submit-btn{
+    top:30px;
+  }
+}
