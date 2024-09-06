@@ -1,17 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
     const products = [
-        { src: 'images/ürün_resimleri/köfte_harcı.jpg', alt: 'Köfte Harcı', title: 'Köfte Harcı' },
-        { src: 'images/ürün_resimleri/kasap_köfte_harcı.jpg', alt: 'Kasap Köfte Harcı', title: 'Kasap Köfte Harcı' },
-        { src: 'images/ürün_resimleri/ızgara_köfte_harcı.jpg', alt: 'Izgara Köfte Harcı', title: 'Izgara Köfte Harcı' },
-        { src: 'images/ürün_resimleri/inegöl_köfte_harcı.jpg', alt: 'İnegöl Köfte Harcı', title: 'İnegöl Köfte Harcı' },
-        { src: 'images/ürün_resimleri/egemir_kofte.jpeg', alt: 'Egemir Köfte Harcı', title: 'Egemir Köfte Harcı' },
-        { src: 'images/ürün_resimleri/hamburger_harcı.jpg', alt: 'Hamburger Harcı', title: 'Hamburger Harcı' },
-        { src: 'images/ürün_resimleri/tavuk_sosu.jpg', alt: 'Tavuk Sosu Harcı', title: 'Tavuk Sosu Harcı' },
-        { src: 'images/ürün_resimleri/kajun-baharatı.jpg', alt: 'Kajun Baharatı', title: 'Kajun Baharatı' },
-        { src: 'images/ürün_resimleri/fajita_baharatı.jpg', alt: 'Fajita Baharatı', title: 'Fajita Baharatı' },
-        { src: 'images/ürün_resimleri/adana_harcı.jpg', alt: 'Adana Harcı', title: 'Adana Harcı' },
-        { src: 'images/ürün_resimleri/kimyon.jpg', alt: 'Kimyon', title: 'Kimyon' },
-        { src: 'images/ürün_resimleri/karabiber.jpeg', alt: 'Karabiber', title: 'Karabiber' }
+        { src: 'images/köfte_harcı.jpg', alt: 'Köfte Harcı', title: 'Köfte Harcı' },
+        { src: 'images/kasap_köfte_harcı.jpg', alt: 'Kasap Köfte Harcı', title: 'Kasap Köfte Harcı' },
+        { src: 'images/ızgara_köfte_harcı.jpg', alt: 'Izgara Köfte Harcı', title: 'Izgara Köfte Harcı' },
+        { src: 'images/inegöl_köfte_harcı.jpg', alt: 'İnegöl Köfte Harcı', title: 'İnegöl Köfte Harcı' },
+        { src: 'images/egemir_kofte.jpeg', alt: 'Egemir Köfte Harcı', title: 'Egemir Köfte Harcı' },
+        { src: 'images/hamburger_harcı.jpg', alt: 'Hamburger Harcı', title: 'Hamburger Harcı' },
+        { src: 'images/tavuk_sosu.jpg', alt: 'Tavuk Sosu Harcı', title: 'Tavuk Sosu Harcı' },
+        { src: 'images/kajun-baharatı.jpg', alt: 'Kajun Baharatı', title: 'Kajun Baharatı' },
+        { src: 'images/fajita_baharatı.jpg', alt: 'Fajita Baharatı', title: 'Fajita Baharatı' },
+        { src: 'images/adana_harcı.jpg', alt: 'Adana Harcı', title: 'Adana Harcı' },
+        { src: 'images/kimyon.jpg', alt: 'Kimyon', title: 'Kimyon' },
+        { src: 'images/karabiber.jpeg', alt: 'Karabiber', title: 'Karabiber' }
     ];
 
     const itemsPerSlide = 4;

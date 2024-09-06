@@ -119,13 +119,14 @@ body {
   transition: all 0.4s;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
   .card .row {
     grid-template-columns: repeat(auto-fit,minmax(70%, 1fr));
   }
   
   .card {
     padding: 20px;
+    height: 950px;
   }
   
   .card h2 {
@@ -135,4 +136,10 @@ body {
   .card .row input[type="submit"] {
     width: 100%;
   }
+
+  .submit-btn{
+    position: relative; /* veya absolute, fixed gibi değerler */
+    top: 100px;
+  }
+ 
 }

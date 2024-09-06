@@ -486,6 +486,42 @@ a {
   width: 25%;
   height: 35%;
 }
+@media(max-width: 768px) {
+  .swiper-prev.main-swiper-left,
+  .swiper-next.main-swiper-right {
+      width: 50px; /* Buton genişliğini daha da küçült */
+      height: 50px; /* Buton yüksekliğini daha da küçült */
+      background-color: rgba(255, 255, 255, 0.7); /* Butonun arka planını yarı saydam yap */
+      border-radius: 50%; /* Ok işaretlerini yuvarlak yap */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .swiper-prev.main-swiper-left {
+      left: 5px; /* Sol oka daha fazla yer bırak */
+  }
+
+  .swiper-next.main-swiper-right {
+      right: 5px; /* Sağ oka daha fazla yer bırak */
+  }
+
+  .swiper-prev.main-swiper-left svg,
+  .swiper-next.main-swiper-right svg {
+      width: 25px; /* Okların genişliğini küçült */
+      height: 25px; /* Okların yüksekliğini küçült */
+  }
+
+  /* Metin ve butonların üst üste binmesini engelle */
+  .swiper-slide {
+      position: relative;
+  }
+
+  .swiper-pagination {
+      bottom: 10px; /* Paginasyonu aşağıya yerleştir */
+  }
+}
+
 @media (max-width: 1024px) {
   .col-md-10.offset-md-5.egemir-map {
       width: 100%; /* Mobilde tam genişlik */
